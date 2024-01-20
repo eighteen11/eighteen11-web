@@ -110,8 +110,8 @@ params:
     disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
-      enable : true
-      showOnScrollUp : false
+      enable : false
+      showOnScrollUp : true
     menus:
       disableAbout: false
       disableEducation: false
@@ -325,7 +325,6 @@ params:
         featuredLink:
           enable: false
           name: "My academic record"
-          url: "https://example.com"
       
   # Achievements
   achievements:
@@ -334,14 +333,13 @@ params:
     items:
       - title: Achieved Microsoft Certified Professional status
         content: Certification Number - E439 6968
-        url: https://example.com
+        url: ""
         image: /microsoft-professional.jpeg
       - title: Successfully completed Microsoft Technology Associate certification
         content: Certification Number - E439 6969
         image: /microsoft-associate.png
       - title: Oracle Certified Professional, Java SE Programmer
         content: Received Oracle Certified Professional for Java SE Programmer
-        url: "https://github.com/gurusabarish/hugo-profile"
         image: /oracle.jpeg
         
       - title: Microsoft Certified MTA - Database Fundamentals
