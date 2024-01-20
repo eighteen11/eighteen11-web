@@ -54,8 +54,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "Mohit's Profile"
+  description: Explore the world of software engineering through Mohit's lens. Discover a journey marked by innovation, impactful projects, and a commitment to positive change. Connect with me to delve into the endless possibilities of technology.
   # staticPath: ""  # The path to serve the static files from
   favicon: "ico-new.png"
 
