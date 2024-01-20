@@ -1,0 +1,443 @@
+baseURL: https://example.org/
+languageCode: "en-us"
+title: "My Profile"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: skills
+      name: Skills
+      title: Skills
+      url: /#skills
+      weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "ico-new.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Mohit Anand" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : false
+    menus:
+      disableAbout: false
+      disableEducation: false
+      disableExperience: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Greetings, I'm"
+    title: "Mohit Anand"
+    subtitle: "I craft tech wonders, from the web to AI and beyond!"
+    content: "A passionate full stack engineer. I tend to make use of modern technologies to build that looks great, feels fantastic, and functions correctly."
+    image: top.png
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "Mohit Anand CV.pdf"
+      download: true
+      newPage: false
+    # socialLinks:
+    #   fontAwesomeIcons:
+    #     - icon: fab fa-github
+    #       url: https://example.com
+    #     - icon: fab fa-x-twitter
+    #       url: https://example.com
+    #   customIcons:
+    #     - icon: /fav.png
+    #       url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "me.png"
+    content: |-
+      As a Master's graduate in Advanced Computer Science and Data Science with over 5+ years of software engineering experience, I specialize in Java development and full-stack solutions. My expertise aligns well with the dynamic requirements of the industry, utilizing Java 8+, Spring Boot, and React for comprehensive front-end and back-end development. Proficient in Agile methodologies and cloud technologies, I am dedicated to delivering high-quality software that meets business objectives and client needs.
+
+      Currently, I am actively exploring new frontiers in technology, delving into areas such as Artificial Intelligence, Machine Learning, Deep Learning, and MLOps. This continual pursuit of knowledge reflects my commitment to staying at the forefront of technological advancements.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Java"
+        - "Kotlin"
+        - "Python"
+        - "JavaScript"
+        - "React"
+        - "Artificial Inteligence"
+        - "Machine Learning"
+        - "Deep Learning"
+        - "Amazon Web Services"
+        - "webRTC"
+
+  skills:
+    enable: true
+    title: "Skills"
+    subtitle: "I possess expertise in the following skills:"
+    items:
+        - C
+        - C++
+        - Java
+        - Kotlin
+        - Python
+        - JavaScript
+        - React
+        - Artificial Intelligence
+        - Machine Learning
+        - Deep Learning
+        - Big Data
+        - Microservices
+        - Spring Boot
+        - Amazon Web Services
+        - Docker
+        - Kubernetes
+        - Unit Testing
+        - Integration Testing
+        - WebSocket
+        - PostgreSQL
+        - MariaDB
+        - Microsoft SQL Server
+        - SQLite
+        - MongoDB
+        - RabbitMQ
+        - Android
+        - iOS (Swift)
+        - NumPy
+        - Pandas
+        - Kafka
+        - CSS
+        - Tailwindcss
+        - HTML
+        - React
+        - Typescript
+        - Prometheus
+        - Grafana
+        - gRPC
+        - Spring Data JPA
+        - Spring Security
+        - ELK stack
+        - ECS
+        - EKS
+        - S3
+        - SQS
+        - Swagger
+        - WebRTC
+        - Xamarin
+        - Jenkins
+        - Hibernate
+
+
+
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Senior Software Engineer"
+        company: "Delta Corp Limited"
+        companyUrl: "https://deltacorp.in/"
+        date: "Dec 2015 - Mar 20221"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://www.adda52.com/playpoker/"
+        content: "
+        <h4>Achievements</h4>
+        <div>
+        <ul><li>Successfully redesigned the backend system from a monolithic to a microservices architecture, resulting in a 30% increase in system efficiency and scalability.</li>
+                  <li>Developed a suite of platforms using Java, JavaScript, and TypeScript, improving regulatory and reputational risk management efficiency by 35%.</li>
+                  <li>Enhanced data processing and analytics capabilities in big data technologies, managing large data sets with a 40% increase in processing speed.</li>
+                  <li>Leveraged React for front-end development, leading to a 30% improvement in user experience, and utilized Kafka and Kubernetes for backend operations, increasing system reliability by 25%.</li>
+                  <li>Implemented APIs and automated testing, achieving a 50% reduction in integration errors and a 20% faster software development lifecycle.</li>
+                  <li>Technologies used - Java, Kotlin, Spring Boot, Redis, RabbitMQ, Kafka, Node.js, MariaDB, MongoDB, Docker, Amazon Web Services, Kubernetes, WebSockets, SmartFoxserver, Unit Testing, Integration Testing, Android, Firebase, Apple Push Notification service, PushWoosh, React.js, TypeScript, etc.</li>
+                  </ul>
+          </div>"
+      - job: "Technology Evanglist"
+        company: "IMRB-Microsoft"
+        companyUrl: "https://gn.dronacharya.info/Microsoft-Ceremony.asp#ad-image-0"
+        date: "Jun 2014 - Jul 2014"
+        featuredLink:
+          enable: true
+          name: "More Info"
+          url: "https://gn.dronacharya.info/Microsoft-Ceremony.asp#ad-image-0"
+        content: "
+        <h4>Achievements</h4>
+        <div>
+        <ul><li>Participated in an IT empowerment program for MSMEs from June 2014, focusing on business growth and market expansion.</li>
+                  <li>Worked on live projects, offering practical experience and collaborative learning.</li>
+                  <li>Received comprehensive training in Microsoft Office 365, enabling effective website and software development.</li>
+                  <li>Engaged directly with MSMEs to understand their needs and provide customized IT solutions.</li>
+                  <li>Played a key role as a 'Technology Evangelist', aiding businesses in optimizing their operations and enhancing my practical IT skills.</li>
+                  <li>Technologies used - C#, .Net, MVC, Entity Framework, WCF, WPF, Sharepoint, Windows Form, Microsoft SQL Server, Office 365 and more.</li>
+                  </ul>
+          </div>"    
+
+      
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "MSc Advanced Computer Science with Data Science"
+        school:
+          name: "University of Strathclyde, United Kingdom"
+          url: "https://www.strath.ac.uk/courses/postgraduatetaught/advancedcomputersciencejanuarystart/"
+        date: "2023 - 2024"
+        GPA: "3.8 out of 4"
+        content: |-
+          Modules
+            - Distributed Information Systems
+            - Mobile Software & Applications
+            - Research Methods
+            - Machine Learning for Data Analytics
+            - Deep Learning Theory and Practice
+            - Research Project (Dissertation)
+            - Information Retrieval
+            - Legal, Ethical and Professional Issues for the Information Society
+            - Big Data Technologies
+          
+          Extracurricular Activities
+            - As a Program Representative, I played a crucial role in fostering communication between students and faculty, ensuring a collaborative learning environment. Additionally, I actively participated in Strath Union activities, contributing to a vibrant university community while broadening my horizons beyond the academic realm.
+            - Hackathon Participant: Engaged in coding competitions to solve real-world problems, showcasing problem-solving and teamwork skills.
+            - Technical Workshops: Organized or participated in workshops to share knowledge and learn new technologies within the university or community.
+
+
+      - title: "Bachelor of Science in Information Technology"
+        school:
+          name: "Dronacharya Group of Institutions"
+          url: "https://gnindia.dronacharya.info/"
+        date: "2011 - 2015"
+        GPA: "First Division"
+        content: |-
+          
+          Extracurricular Activities - Attended workshops and seminars on:
+            - .NET and Object-Oriented Programming (OOPS)
+            - iOS development
+            - Java Application development
+            - Google Android Applications
+            - Oracle SQL
+            - Embedded System Technology
+            - Intellectual Property Rights
+            
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+      
+  # Achievements
+  achievements:
+    enable: true
+    title: "Certifications and Achievements"
+    items:
+      - title: Achieved Microsoft Certified Professional status
+        content: Certification Number - E439 6968
+        url: https://example.com
+        image: /microsoft-professional.jpeg
+      - title: Successfully completed Microsoft Technology Associate certification
+        content: Certification Number - E439 6969
+        image: /microsoft-associate.png
+      - title: Oracle Certified Professional, Java SE Programmer
+        content: Received Oracle Certified Professional for Java SE Programmer
+        url: "https://github.com/gurusabarish/hugo-profile"
+        image: /oracle.jpeg
+        
+      - title: Microsoft Certified MTA - Database Fundamentals
+        content: Attained Microsoft Certified MTA - Database Fundamentals.
+        image: /mta-database-fundamentals.png
+
+      - title: IBM DB2 Academic Associate Certification
+        content: Achieved IBM DB2 Academic Associate certification in Database and Application Fundamentals.
+        image: /ibm.png
+
+    
+
+  # projects
+  projects:
+    enable: true
+    title: "Projects"
+    items:
+      - title: Cachy - Beyond Social Flash (Freelancing) 
+        content:  Beyond Flash Social Network for Connecting, Inspiring, and Validating through Daily, Behavior-Reflecting Content.
+        image: cachy.png
+        featured:
+          name: Demo
+          link: https://cachy.com
+        badges:
+          - "Java"
+          - "Kotlin"
+          - "Spring Boot"
+          - "React"
+          - "webRTC"
+          - "Docker"
+          - "Kubernetes"
+      
+      - title: Junit Exercise Challange (Dissertation)
+        content:  Developed the JUnit Challenge Exercises Application, a web-based tool aimed at enhancing JUnit test writing skills for programming students.
+        image: dis.jpeg
+        badges:
+          - "Java"
+          - "Kotlin"
+          - "Spring Boot"
+          - "React"
+          - "Docker"
+          - "Kubernetes"
+          - "Junit5"
+
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: mohit@eighteen11.com
+    btnName: Mail me
+    formspree:
+      enable: true # `contact.email` value will be ignored
+      formId: xrgnbovk # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+      emailCaption: "Enter your email address"
+      messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+      facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
