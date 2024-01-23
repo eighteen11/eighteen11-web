@@ -14,6 +14,7 @@ outputs:
 
 Paginate: 3
 enableRobotsTXT: true
+robotsdisallow: true
 # disqusShortname: your-disqus-shortname
 
 googleAnalytics: G-D55HEV0R54
@@ -138,10 +139,10 @@ params:
       url: "Mohit Anand CV.pdf"
       download: true
       newPage: false
-    # socialLinks:
-    #   fontAwesomeIcons:
-    #     - icon: fab fa-github
-    #       url: https://example.com
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/moxie18/
     #     - icon: fab fa-x-twitter
     #       url: https://example.com
     #   customIcons:
@@ -408,7 +409,7 @@ params:
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com
-      linkedin: https://linkedin.com
+      linkedin: https://www.linkedin.com/in/moxie18/
       twitter: https://twitter.com
       instagram: https://instagram.com
       facebook: https://facebook.com
