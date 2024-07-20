@@ -137,7 +137,7 @@ params:
       enable: true
       name: "Resume"
       url: "Mohit Anand CV.pdf"
-      download: true
+      download: false
       newPage: false
     socialLinks:
       fontAwesomeIcons:
